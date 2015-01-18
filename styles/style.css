@@ -1,0 +1,15 @@
+.app-bar{
+    /* background: #3372DF; */
+    background: #29333B;
+}
+
+.color--white{
+    color: #fff;
+}
+
+@media only screen and (min-width: 620px) {
+
+    .editorial-header .container::before {
+        margin-top:67px;
+    }
+}
