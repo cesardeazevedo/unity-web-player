@@ -1,6 +1,6 @@
 {
   "name": "unity-web-player",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/cesardeazevedo/unity-web-player",
   "authors": [
     "César Augusto D. Azevedo <cesardeazevedo@outlook.com>"
@@ -21,6 +21,12 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.5.2"
+    "polymer": "Polymer/polymer#~0.5.2",
+    "material-design-icons": "~1.0.1",
+    "mdi": "~0.8.82-alpha",
+    "github-button": "~0.1.5",
+    "twitter-button": "~0.2.0",
+    "facebook-button": "~0.2.0",
+    "gplus-elements": "~0.3.0"
   }
 }
