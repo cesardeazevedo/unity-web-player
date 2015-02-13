@@ -3,49 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Component - Unity WebPlayer</title>
+    <title>&lt;unity-web-player&gt;</title>
+    <script src="../bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <!-- unity web player component -->
+    <link rel='import' href='./unity-web-player.html' />
+    <!-- made with love component -->
+    <link rel="import" href="bower_components/made-with-love/made-with-love.html">
+    <!-- github button -->
+    <link rel="import" href="bower_components/github-button/dist/github-button.html" />
+    <!-- twitter button -->
+    <link rel="import" href="bower_components/twitter-button/dist/twitter-button.html" />
+    <!-- facebook button -->
+    <link rel="import" href="bower_components/facebook-button/dist/facebook-button.html" />
+    <!-- gplus button -->
+    <link rel="import" href="bower_components/gplus-elements/dist/gplus-one.html" />
+    <link href="bower_components/mdi/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles/main.css" type='text/css' />
     <link rel="stylesheet" href="styles/components.css" type='text/css' />
     <link rel="stylesheet" href="styles/style.css" type='text/css' />
 </head>
 <body>
     <header class="app-bar promote-layer">
         <div class="app-bar-container">
-            <section class="styleguide__editorial-header">
-                <div class="editorial-header">
-                    <div class="container">
-                        <div class="g-wide--3 g-medium-half">
-                            <h1 class="color--green-secondary"><span class="color--gray-keyline"><</span><strong>unity-web-player</strong><span class="color--gray-keyline">></span></h1>
-                        </div>
-                        <div class="g-wide--3 g-wide-last g-medium-half g-last">
-                            <p class="color--white large">Web Component for Unity web player</p>
-                        </div>
-                        <br />
-                    </div>
+            <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
+            <h1 class="logo">
+                <div class="color--green-secondary">
+                    <span class="color--gray-keyline"><</span>
+                    <strong>unity-web-player</strong>
+                    <span class="color--gray-keyline">></span>
                 </div>
+            </h1>
+            <section class="app-bar-actions">
+            <!-- Put App Bar Buttons Here -->
+            <!-- e.g <button><i class="icon icon-star"></i></button> -->
             </section>
         </div>
     </header>
-    <div class="highlight-module  highlight-module--left   highlight-module--remember  ">
-          <div class="highlight-module__container">
-            <div class="highlight-module__content   g-wide--push-1 g-wide--pull-1  g-medium--push-1   ">
-              <p class="highlight-module__title"> Install</p>
-              <span class="highlight-module__text">
-                  <span class="highlight-module__text"><h4>Install using bower</h4>
-                    <pre><code class='html color--text'>bower install unity-web-player</code></pre>
-                </span>
-              </span>
+    <nav class="navdrawer-container promote-layer">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a class="mdi mdi-polymer" href="#intro">unity-web-player</a></li>
+        <li><a class="icon" href="#get-started">Get Started</a></li>
+        <li><a class="mdi mdi-gamepad-variant" href="#examples">Examples</a></li>
+        <li><a class="mdi mdi-settings" href="#options">Options</a></li>
+        <li><a class="mdi mdi-github-circle" href="https://github.com/cesardeazevedo/unity-web-player" target="_BLANK">Github</a></li>
+      </ul>
+    </nav>
+    <main>
+        <div id="intro">
+            <div class="center">
+                <h1>
+                    Web component for Unity web player
+                </h1>
             </div>
-          </div>
-    </div>
-    <div class="highlight-module  highlight-module--right   highlight-module--learning">
-          <div class="highlight-module__container">
-            <div class="highlight-module__content   g-wide--push-1   ">
-              <p class="highlight-module__title"> Usage</p>
-              <p class="highlight-module__text">Start using Now
-                <pre><code class='html color--text'>&lt;unity source='gameFile.unity3d' name='My Game' /&gt;</code></pre>
-              </p>
+        </div>
+        <!-- Get Started -->
+        <div id="get-started">
+            <div class="highlight-module  highlight-module--left   highlight-module--remember  ">
+                <div class="highlight-module__container">
+                    <div class="highlight-module__content   g-wide--push-1 g-wide--pull-1  g-medium--push-1   ">
+                        <p class="highlight-module__title"> Get Started</p>
+                        <span class="highlight-module__text">
+                            <span class="highlight-module__text"><h2>Install using bower</h2>
+                                <pre><code class="html color--text">$ bower install --save Polymer/polymer
+</code></pre>
+                            <pre><code class="html color--text"> $ bower install unity-web-player </code></pre>
+                            </span>
+                        </span>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+        <!-- Usage -->
+        <div id="usage">
+            <div class="highlight-module  highlight-module--right   highlight-module--learning">
+                <div class="highlight-module__container">
+                    <div class="highlight-module__content   g-wide--push-1   ">
+                    <p class="highlight-module__title"> Usage</p>
+                    <h2 class="highlight-module__text">Start using Now
+                    </h2>
+                        <pre><code class='html color--text'>&lt;unity-web-player source='gameFile.unity3d' name='My Game'&gt;&lt;/unity-web-player&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container center">
+            <a name="guides-intro"></a>
+            <h2 class="subsection-title">Features</h2>
+        </div>
+        <div class="container">
+            <ul class="list-guides-intro list-centered list--reset clear">
+                <li class="g--third theme--multi-device-layouts  ">
+                    <a href="#simple" class="themed">
+                        <span class="icon-circle--large themed--background"><i class="mdi mdi-gamepad-variant"></i></span>
+                        <h3 class="large text-divider">Flexible and Simple</h3>
+                    </a>
+                    <p>Easy to insert a unity web player to your website through 
+                    <a href="https://www.polymer-project.org" target="_BLANK">poylmer</a>,
+                    without a messy code.</p>
+                </li>
+                <li class="g--third theme--introduction-to-media g-medium--last ">
+                    <a href="#autoplay" class="themed">
+                        <span class="icon-circle--large themed--background"><i class="mdi mdi-youtube-play"></i></span>
+                        <h3 class="large text-divider">Play Button</h3>
+                    </a>
+                    <p>Inserts a sweet play button and a background with a message to you attract the users.</p>
+                </li>
+                <li class="g--third theme--user-input g--last">
+                    <a href="#multiple" class="themed">
+                        <span class="icon-circle--large themed--background"><i class="mdi mdi-view-stream"></i></span>
+                        <h3 class="large text-divider">Multiple Objects</h3>
+                    </a>
+                    <p>Easy way to get multiple unity web player object on the same page.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="examples">
+            <div class="featured-spotlight">
+                <div class="example">
+                    <h1>Example</h1>
+                    <br>
+                    <unity-web-player source='game/PlanetEscapeFinal.unity3d' name='Planet Escape' autoplay="false" background="images/background.png" text="Ludum Dare 30 Game" color="white" playColor="green" /></unity-web-player>
+                </div>
+                <br>
+                <div class="g-wide--3 g--centered">
+                    <pre><code class='html color--text'>&lt;unity-web-player source='PlanetEscapeFinal.unity3d' name='Planet Escape' autoplay="false" background="images/background.png" text="Ludum Dare 30 Game" color="white" playColor="green"&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="code">
+            <div class="highlight-module highlight-module--code highlight-module--right">
+                <div class="highlight-module__container">
+                    <div class="">
+                        <h1>Code Sample</h1>
+                        <code class="html">
+                            <div class="highlight">
+                                <pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;title&gt;</span>My Game<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;script</span><span class="na"> src=</span><span class="s">"bower_components/webcomponentsjs/webcomponents.min.js"</span> /&gt;
+        <span class="nt">&lt;link</span><span class="na"> rel=</span><span class="s">"import"</span><span class="n"> href=</span><span class="s">"bower_components/unity-web-player/unity-web-player.html"</span> /&gt;
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;unity-web-player</span><span class="na"> source=</span><span class="s">"mygame.unity3d"</span><span class="na"> width=</span><span class="s">"980"</span><span class="na"> height=</span><span class="s">"465"</span>&gt;&lt;/unity-web-player&gt;
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></pre>
+                            </div>
+                        </code>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="options">
+            <div class="summary-headers">
+                <div class="container">
+                    <h1>Options</h1>
+                    <table class="table-4">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Type</th>
+                                <th>Default</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="Attribute">source</td>
+                                <td data-th="Type">String</td>
+                                <td data-th="Default"></td>
+                                <td data-th="Description"><strong>*Required.</strong> Path to `.unity3d` file</td>
+                            </tr>
+                            <tr>
+                                <td data-th="Attribute">name</td>
+                                <td data-th="Type">String</td>
+                                <td data-th="Default"></td>
+                                <td data-th="Description">
+                                    The name of your game, will show on middle of the screen if `autoplay` is set to false
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-th="Attribute">width</td>
+                                <td data-th="Type">Integer</td>
+                                <td data-th="Default">980</td>
+                                <td data-th="Description">Sets the width of the unity web player</td>
+                            </tr>
+                            <tr>
+                                <td data-th="Attribute">height</td>
+                                <td data-th="Type">Integer</td>
+                                <td data-th="Default">465</td>
+                                <td data-th="Description">Sets the height of the unity web player</td>
+                            </tr>
+                            <tr>
+                                <td data-th="Attribute">autoplay</td>
+                                <td data-th="Type">Boolean</td>
+                                <td data-th="Default">true</td>
+                                <td data-th="Description">
+                                    If false, will show a play button on middle of screen,
+                                    otherwise will play game immediately.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-th="Attribute">background</td>
+                                <td data-th="Type">String</td>
+                                <td data-th="Default"></td>
+                                <td data-th="Description">
+                                    A path to a background image, will show if `autoplay` attribute is set to false
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-th="Attribute">text</td>
+                                <td data-th="Type">String</td>
+                                <td data-th="Default"></td>
+                                <td data-th="Description">An aditional text to show when `autoplay` attribute is set to false</td>
+                            </tr>
+                            <tr>
+                                <td data-th="Attribute">color</td>
+                                <td data-th="Type">String</td>
+                                <td data-th="Default">black</td>
+                                <td data-th="Description">A color to `name` and `text` attribute</td>
+                            </tr>
+                            <tr>
+                                <td data-th="Attribute">playColor</td>
+                                <td data-th="Type">String</td>
+                                <td data-th="Default">black</td>
+                                <td data-th="Description">The play button color.<br/>
+                                    Current color availables:
+                                    aqua, black, darkcyan, green, pink, red and white </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <div class="g-wide--3 g--centered made">
+        <made-with-love name="César Augusto" url="https://github.com/cesardeazevedo"></made-with-love>
     </div>
+    <br>
+    <div class="container">
+        <div class="g-medium--half g-wide--1">
+            <twitter-button user="FXCesinha" href="http://cesardeazevedo.github.io/unity-web-player" text="Web Component for Unity web player" type="share"></twitter-button>
+        </div>
+        <div class="g-medium--half g-medium--last g-wide--1">
+            <facebook-button href="http://cesardeazevedo.github.io/unity-web-player" type="share"></twitter-button>
+        </div>
+        <div class="g-medium--half g-wide--1">
+            <github-button user="cesardeazevedo" repo="unity-web-player"></github-button>
+        </div>
+        <div class="g-medium--half g-medium--last g-wide--1 g-wide--last">
+            <gplus-one annotation="inline" href="http://cesardeazevedo.github.io/unity-web-player"></gplus-one>
+        </div>
+    </div>
+    </footer>
+    <script>
+        (function(){
+  var querySelector = document.querySelector.bind(document);
+
+  var navdrawerContainer = querySelector('.navdrawer-container');
+  var body = document.body;
+  var appbarElement = querySelector('.app-bar');
+  var menuBtn = querySelector('.menu');
+  var main = querySelector('main');
+
+  function closeMenu() {
+    body.classList.remove('open');
+    appbarElement.classList.remove('open');
+    navdrawerContainer.classList.remove('open');
+  }
+
+  function toggleMenu() {
+    body.classList.toggle('open');
+    appbarElement.classList.toggle('open');
+    navdrawerContainer.classList.toggle('open');
+    navdrawerContainer.classList.add('opened');
+  }
+
+  main.addEventListener('click', closeMenu);
+  menuBtn.addEventListener('click', toggleMenu);
+  navdrawerContainer.addEventListener('click', function (event) {
+    if (event.target.nodeName === 'A' || event.target.nodeName === 'LI') {
+      closeMenu();
+    }
+  });
+  })();
+    </script>
 </body>
 </html>
