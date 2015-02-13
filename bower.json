@@ -26,6 +26,7 @@
     "github-button": "~0.1.5",
     "twitter-button": "~0.2.0",
     "facebook-button": "~0.2.0",
-    "gplus-elements": "~0.3.0"
+    "gplus-elements": "~0.3.0",
+    "made-with-love": "*"
   }
 }
