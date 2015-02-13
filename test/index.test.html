@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title><unity-web-player></title>
     <script src="../bower_components/webcomponentsjs/webcomponents.min.js"></script>
-    <link rel='import' href='../unity.html' />
+    <link rel='import' href='../unity-web-player.html' />
     <style>
         body{
             width 980px;
@@ -29,7 +29,9 @@
             </code>
         </h1>
         <hr>
-        <unity-web-player source='PlanetEscapeFinal.unity3d' name='Planet Escape' width="980" height="465" />
+        <unity-web-player source='PlanetEscapeFinal.unity3d' name='Planet Escape' autoplay="false" background="../images/background.png" text="Ludum Dare 30 Game, Theme World Connect" color="white" playColor="green"></unity-web-player>
+        <hr>
+        <unity-web-player source='PlanetEscapeFinal.unity3d' name='Name of your Game' autoplay="false" text="Awesome game" color="black" playColor="green"></unity-web-player>
     </div>
 </body>
 </html>
