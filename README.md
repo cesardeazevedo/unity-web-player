@@ -3,7 +3,7 @@
 
 =======================================================
 
-A simple and flexible web component to unity web play games.
+Simple and flexible web component to unity web player games.
 
 [Demo Page](http://cesardeazevedo.github.io/unity-web-player/)
 
@@ -25,7 +25,7 @@ Install the component using [bower](http://bower.io/)
 
 2. Import this custom element
 	
-`<link rel='import' href='./unity-web-player.html' />`
+`<link rel='import' href='bower_components/unity-web-player/unity-web-player.html' />`
 
 3. Start using now
 
