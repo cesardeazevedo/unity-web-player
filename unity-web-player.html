@@ -213,7 +213,8 @@
             this.setBounds(this.$.overlay);
             this.setBounds(this.$.background);
 
-            this.$.background.style.backgroundImage = 'url('+this.background+')';
+            if(this.background)
+                this.$.background.style.backgroundImage = 'url('+this.background+')';
 
             this.$.play.style.backgroundImage = 'url(images/play-'+this.playColor+'.png)';
 
