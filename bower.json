@@ -1,11 +1,12 @@
 {
   "name": "unity-web-player",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/cesardeazevedo/unity-web-player",
   "authors": [
     "César Augusto D. Azevedo <cesardeazevedo@outlook.com>"
   ],
   "description": "Web Component for Unity3D Web Player",
+  "main": "unity-web-player.html",
   "keywords": [
     "web-components",
     "custom-elements",
