@@ -6,7 +6,7 @@
     <title>&lt;unity-web-player&gt;</title>
     <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
     <!-- unity web player component -->
-    <link rel='import' href='./unity-web-player.html' />
+    <link rel='import' href='bower_components/unity-web-player/unity-web-player.html' />
     <!-- made with love component -->
     <link rel="import" href="bower_components/made-with-love/made-with-love.html">
     <!-- github button -->
@@ -65,9 +65,7 @@
                         <p class="highlight-module__title"> Get Started</p>
                         <span class="highlight-module__text">
                             <span class="highlight-module__text"><h2>Install using bower</h2>
-                                <pre><code class="html color--text">$ bower install --save Polymer/polymer
-</code></pre>
-                            <pre><code class="html color--text"> $ bower install unity-web-player </code></pre>
+                                <pre><code class="html color--text"> $ bower install unity-web-player </code></pre>
                             </span>
                         </span>
                     </div>
@@ -145,11 +143,11 @@
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
         <span class="nt">&lt;title&gt;</span>My Game<span class="nt">&lt;/title&gt;</span>
-        <span class="nt">&lt;script</span><span class="na"> src=</span><span class="s">"bower_components/webcomponentsjs/webcomponents.min.js"</span> /&gt;
-        <span class="nt">&lt;link</span><span class="na"> rel=</span><span class="s">"import"</span><span class="n"> href=</span><span class="s">"bower_components/unity-web-player/unity-web-player.html"</span> /&gt;
+        <span class="nt">&lt;script</span><span class="na"> src=</span><span class="s">"bower_components/webcomponentsjs/webcomponents.min.js"</span><span class="nt">/&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;link</span><span class="na"> rel=</span><span class="s">"import"</span><span class="na"> href=</span><span class="s">"bower_components/unity-web-player/unity-web-player.html"</span><span class="nt"> /&gt;</span>
     <span class="nt">&lt;/head&gt;</span>
     <span class="nt">&lt;body&gt;</span>
-        <span class="nt">&lt;unity-web-player</span><span class="na"> source=</span><span class="s">"mygame.unity3d"</span><span class="na"> width=</span><span class="s">"980"</span><span class="na"> height=</span><span class="s">"465"</span>&gt;&lt;/unity-web-player&gt;
+        <span class="nt">&lt;unity-web-player</span><span class="na"> source=</span><span class="s">"mygame.unity3d"</span><span class="na"> width=</span><span class="s">"980"</span><span class="na"> height=</span><span class="s">"465"</span><span class="nt">&gt;&lt;/unity-web-player&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span></pre>
                             </div>
@@ -253,7 +251,7 @@
     <br>
     <div class="container">
         <div class="g-medium--half g-wide--1">
-            <twitter-button user="FXCesinha" href="http://cesardeazevedo.github.io/unity-web-player" text="Web Component for Unity web player #unity3d" type="share"></twitter-button>
+            <twitter-button user="FXCesinha" href="http://cesardeazevedo.github.io/unity-web-player" text="Web Component for Unity web player" type="share"></twitter-button>
         </div>
         <div class="g-medium--half g-medium--last g-wide--1">
             <facebook-button href="http://cesardeazevedo.github.io/unity-web-player" type="share"></twitter-button>
