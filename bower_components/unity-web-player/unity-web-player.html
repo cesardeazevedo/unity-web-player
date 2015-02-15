@@ -1,4 +1,4 @@
-<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="../polymer/polymer.html">
 
 <polymer-element name='unity-web-player' attributes='source name width height autoplay background text color playColor'>
 <template>
@@ -89,7 +89,7 @@
         <div id="overlay" on-tap="{{play}}"></div>
         <div id="background">
             <div id="info" on-tap="{{play}}">
-                <div id="play"></div>
+                <div id="play" style="background-image: url(images/play-color.png)"></div>
                 <div id="description">
                     <h2 name="name">{{ name }}</h2>
                 </div>
@@ -213,9 +213,11 @@
             this.setBounds(this.$.overlay);
             this.setBounds(this.$.background);
 
-            this.$.background.style.backgroundImage = 'url('+this.background+')';
+            if(this.background)
+                this.$.background.style.backgroundImage = 'url('+this.background+')';
 
-            this.$.play.style.backgroundImage = 'url(images/play-'+this.playColor+'.png)';
+            //for now, replace `color` string to keep the current folder path eg.: `bower_componts/unity-web-player/images/play-black.png`
+            this.$.play.style.backgroundImage = this.$.play.style.backgroundImage.replace('color', this.playColor);
 
             this.$.info.style.marginTop = this.height / 2-70 + 'px';
 
