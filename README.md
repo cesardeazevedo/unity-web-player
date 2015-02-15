@@ -59,7 +59,7 @@ Install the component using [bower](http://bower.io/)
 |background| String|| A path to a background image, will show if `autoplay` attribute is set to false |
 |text| String|| An aditional text to show when `autoplay` attribute is set to false|
 |color| String| black |A color to `name` and `text` attribute|
-|playColor| String| black| The play button color.Current color availables: aqua, black, darkcyan, green, pink, red and white |
+|playColor|`aqua`, `black`, `darkcyan`, `green`, `pink`, `red`, `white`| `black`| The play button color.|
 
 
  
