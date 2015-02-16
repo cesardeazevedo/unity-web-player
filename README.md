@@ -1,35 +1,38 @@
 # \<unity-web-player\>
 &lt;unity-web-player> Web Component for Unity3D Web Player. &lt;/unity-web-player>
 
-=======================================================
 
-Simple and flexible web component to unity web player games.
+#####Simple and flexible web component to unity web player games.
 
 [Demo Page](http://cesardeazevedo.github.io/unity-web-player/)
 
 ##Get Started
 
-Install the [Polymer](https://www.polymer-project.or) polyfill
+Install using [bower](http://bower.io/)
 
-`$ bower install --save Polymer/polymer`
-
-Install the component using [bower](http://bower.io/)
-
-`# bower install unity-web-player`
+```sh
+$ bower install unity-web-player
+````
 
 ##Usage
 
 1. Import polyfill
 
-`<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>`
+	```html
+	<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+	```
 
 2. Import this custom element
-	
-`<link rel='import' href='bower_components/unity-web-player/unity-web-player.html' />`
+
+	````html
+	<link rel='import' href='bower_components/unity-web-player/unity-web-player.html' />
+	```
 
 3. Start using now
 
-`<unity-web-player source='gameFile.unity3d' name='My Game'></unity-web-player>`
+	```html
+	<unity-web-player source='gameFile.unity3d' name='My Game'></unity-web-player>
+	```
 
 ###Code Sample
 
